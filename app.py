@@ -1,4 +1,4 @@
-rom flask import Flask, render_template,redirect, request, session, url_for
+from flask import Flask, render_template,redirect, request, session, url_for
 
 app = Flask(__name__)
 
