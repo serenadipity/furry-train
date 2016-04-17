@@ -8,7 +8,7 @@ $(window).scroll(function() {
     }
 });
 
-//jQuery for page scrolling feature - requires jQuery Easing plugin
+//page scrolling (needs js easing)
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
