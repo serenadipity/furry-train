@@ -1,7 +1,7 @@
 body {
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, #fff 50%, #000000 50%);
+    background: linear-gradient(90deg, #9ADAFF 50%, rgba(154,218,255,0.5) 50%);
 }
 
 html {
@@ -78,7 +78,9 @@ body {
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #fff;
+    background-image: url("bg.png");
+    background-size: 100% 115%;
+    /*background:  #A3E4D7;*/
 }
 
 .section2 {
