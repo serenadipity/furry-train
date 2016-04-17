@@ -1,3 +1,13 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
 .panel{
 	float: right;
 	width: 50%;
@@ -24,14 +34,18 @@ body {
 
 */
 
-body {
-    width: 100%;
-    height: 100%;
+.btn-circle {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 50px;
+  border-radius: 50%;
 }
 
-html {
-    width: 100%;
-    height: 100%;
+.fa-arrow-down {
+    color: black;
 }
 
 @media(min-width:767px) {
