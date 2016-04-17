@@ -21,6 +21,10 @@ span.glyphicon-chevron-down, span.glyphicon-chevron-up {
     font-size: 1.5em;
 }
 
+#font1 {
+    font-family: 'Nixie One', cursive;
+}
+
 /*
 .panel{
 	float: right;
