@@ -7,7 +7,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
     <script src="jquery-1.12.0.min.js"></script>
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"> 
     <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
@@ -17,7 +16,7 @@
 <body>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">
                 <a class="navbar-brand page-scroll" href="#page-top">Sass</a>
@@ -48,7 +47,7 @@
                 <div class="col-lg-12">
                     <h1>Sass</h1>
                     <p><strong>Insert General Description</strong></p>
-                    <a class="btn btn-default page-scroll" href="#one">Click to Scroll Down</a>
+                    <a class="btn btn-default btn-circle page-scroll" href="#one"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
                 </div>
             </div>
         </div>
@@ -59,7 +58,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Section One</h1>
-                    <a href="#two" class="page-scroll btn btn-default btn-circle"><i class="fa fa-arrow-down"></i></a>
+                    <a href="#two" class="page-scroll btn btn-default btn-circle"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
                 </div>
             </div>
         </div>
@@ -70,8 +69,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Section Two</h1>
-                    <panel class="panel">Hi</panel>
-                    <panel class="panel2">Hello</panel>
+                    <a href="#three" class="page-scroll btn btn-default btn-circle"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
                 </div>
             </div>
         </div>
@@ -81,7 +79,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
+                    <a href="#two" class="page-scroll btn btn-default btn-circle"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a>
                     <h1>Section Three</h1>
+                    <a href="#intro" class="page-scroll btn btn-default">Back to Top</a>
                 </div>
             </div>
         </div>
