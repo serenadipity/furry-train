@@ -73,6 +73,8 @@ html {
 
 .info {
   color: #fff;
-  font-size: 20px; }
+  font-size: 20px;
+  padding-left: 40px;
+  text-align: left; }
 
 /*# sourceMappingURL=style.css.map */
