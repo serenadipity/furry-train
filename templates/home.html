@@ -1,97 +1,97 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  
+
 <head>
-    <title>Sass</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"> 
-    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+  <title>Sass</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../static/styles/bootstrap.min.css">
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <link href="../static/styles/style.css" rel="stylesheet">
 
 </head>
 
 <body>
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <a class="navbar-brand page-scroll" href="#page-top">Sass</a>
-            </div>
-
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="hidden">
-                        <a class="page-scroll" href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#one">One</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#two">Two</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#three">Three</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <div class="navbar-header page-scroll">
+          <a class="navbar-brand page-scroll" href="#page-top">Sass</a>
         </div>
+
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            <li class="hidden">
+              <a class="page-scroll" href="#page-top"></a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#one">One</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#two">Two</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#three">Three</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <section id="intro" class="section1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img src="static/sass.svg" style="width: 40%; height: 40%;"></img>
-                    <p><strong>Insert General Description</strong></p>
-                    <a class="btn btn-default btn-circle page-scroll" href="#one"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <img src="static/images/sass.svg" style="width: 40%; height: 40%;"></img>
+            <p><strong>Insert General Description</strong></p>
+            <a class="btn btn-default btn-circle page-scroll" href="#one"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="one" class="section2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Section One</h1>
-                    <a href="#two" class="page-scroll btn btn-default btn-circle"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <a href="#intro" class="page-scroll btn btn-default btn-circle"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a>
+            <h1 class="title">Section One</h1>
+            <a href="#two" class="page-scroll btn btn-default btn-circle"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="two" class="section3">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Section Two</h1>
-                    <a href="#three" class="page-scroll btn btn-default btn-circle"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <a href="#one" class="page-scroll btn btn-default btn-circle"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a>
+            <h1 class="title">Section Two</h1>
+            <a href="#three" class="page-scroll btn btn-default btn-circle"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="three" class="section4">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <a href="#two" class="page-scroll btn btn-default btn-circle"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a>
-                    <h1>Section Three</h1>
-                    <a href="#intro" class="page-scroll btn btn-default">Back to Top</a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <a href="#two" class="page-scroll btn btn-default btn-circle"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a>
+            <h1 class="title">Section Three</h1>
+            <a href="#intro" class="page-scroll btn btn-default">Back to Top</a>
+          </div>
         </div>
+      </div>
     </section>
 
-    <script src="static/jquery.js"></script>
-    <script src="static/bootstrap.min.js"></script>
-    <script src="static/jquery.easing.min.js"></script>
-<script src="static/style.js"></script>
-</body>
+    <script src="static/javascripts/jquery.js"></script>
+    <script src="static/javascripts/bootstrap.min.js"></script>
+    <script src="static/javascripts/jquery.easing.min.js"></script>
+    <script src="static/javascripts/style.js"></script>
+  </body>
 
 </html>
-
-
