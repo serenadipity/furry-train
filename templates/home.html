@@ -18,7 +18,7 @@
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header page-scroll">
-          <a class="navbar-brand page-scroll" href="#page-top">Sass</a>
+          <a class="navbar-brand page-scroll" href="#page-top"></a>
         </div>
 
         <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -27,13 +27,25 @@
               <a class="page-scroll" href="#page-top"></a>
             </li>
             <li>
-              <a class="page-scroll" href="#one">One</a>
+              <a class="page-scroll" href="#one">Variables</a>
             </li>
             <li>
-              <a class="page-scroll" href="#two">Two</a>
+              <a class="page-scroll" href="#two">Functions</a>
             </li>
             <li>
-              <a class="page-scroll" href="#three">Three</a>
+              <a class="page-scroll" href="#three">Control Directives</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#four">Nesting</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#five">@ Rules</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#six">Mixins</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#seven">Why Sass?</a>
             </li>
           </ul>
         </div>
@@ -44,8 +56,20 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <img src="static/images/sass.svg" style="width: 40%; height: 40%;"></img>
-            <p><strong>Insert General Description</strong></p>
+            <img src="static/images/sass-glasses.svg" style="width: 40%; height: 40%;"></img>
+            <p class="title-desc"><strong>
+              Sass is a powerful CSS extension language that is interpreted into CSS
+              <br>
+              Adds mechanics that are typically available in traditional programming languages
+              <br>
+              Designed by Hampton Catlin
+              <br>
+              Developed by Weizenbaum and Eppstein
+              <br>
+              First appeared in 2006
+              <br>
+              Current Release: Selective Steve (3.4.21)
+            </strong></p>
             <a class="btn btn-default btn-circle page-scroll" href="#one"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
           </div>
         </div>
@@ -55,10 +79,14 @@
     <section id="one" class="section2">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-5">
+          </div>
+          <div class="col-lg-2">
             <a href="#intro" class="page-scroll btn btn-default btn-circle"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a>
-            <h1 class="title">Section One</h1>
+            <h1 class="title">Variables</h1>
             <a href="#two" class="page-scroll btn btn-default btn-circle"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+          </div>
+          <div class="col-lg-5">
           </div>
         </div>
       </div>
@@ -67,10 +95,14 @@
     <section id="two" class="section3">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-5">
+          </div>
+          <div class="col-lg-2">
             <a href="#one" class="page-scroll btn btn-default btn-circle"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a>
-            <h1 class="title">Section Two</h1>
+            <h1 class="title">Functions</h1>
             <a href="#three" class="page-scroll btn btn-default btn-circle"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+          </div>
+          <div class="col-lg-5">
           </div>
         </div>
       </div>
@@ -79,10 +111,78 @@
     <section id="three" class="section4">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-5">
+          </div>
+          <div class="col-lg-2">
             <a href="#two" class="page-scroll btn btn-default btn-circle"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a>
-            <h1 class="title">Section Three</h1>
-            <a href="#intro" class="page-scroll btn btn-default">Back to Top</a>
+            <h1 class="title">Control Directives</h1>
+            <a href="#four" class="page-scroll btn btn-default btn-circle"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+          </div>
+          <div class="col-lg-5">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="four" class="section4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+          </div>
+          <div class="col-lg-2">
+            <a href="#three" class="page-scroll btn btn-default btn-circle"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a>
+            <h1 class="title">Nesting</h1>
+            <a href="#five" class="page-scroll btn btn-default btn-circle"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+          </div>
+          <div class="col-lg-5">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="five" class="section4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+          </div>
+          <div class="col-lg-2">
+            <a href="#four" class="page-scroll btn btn-default btn-circle"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a>
+            <h1 class="title">@ Rules</h1>
+            <a href="#six" class="page-scroll btn btn-default btn-circle"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+          </div>
+          <div class="col-lg-5">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="six" class="section4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+          </div>
+          <div class="col-lg-2">
+            <a href="#five" class="page-scroll btn btn-default btn-circle"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a>
+            <h1 class="title">Mixins</h1>
+            <a href="#seven" class="page-scroll btn btn-default btn-circle"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+          </div>
+          <div class="col-lg-5">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="seven" class="section4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+          </div>
+          <div class="col-lg-2">
+            <a href="#six" class="page-scroll btn btn-default btn-circle"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a>
+            <h1 class="title">Why Sass?</h1>
+            <a href="#intro" class="page-scroll btn btn-default btn-circle">TOP</span></a>
+          </div>
+          <div class="col-lg-5">
           </div>
         </div>
       </div>
