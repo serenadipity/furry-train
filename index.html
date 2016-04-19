@@ -119,7 +119,30 @@
            <h1 class="title">Functions</h1>
            <a href="#three" class="page-scroll btn btn-default btn-circle"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
          </div>
-         <div class="col-lg-5">
+         <div class="col-lg-5 info">
+           RGB Functions
+           <br>
+           &nbsp&nbsp rgb($red, $green, $blue)
+           <br>
+           &nbsp&nbsp Creates a color from red, green, blue values
+           <br>
+           &nbsp&nbsp mix($color1, $color2, [$weight])
+           <br>
+           String Functions
+           <br>
+           &nbsp&nbsp unquote($string)
+           <br>
+           &nbsp&nbsp Add quotes to a string
+           <br>
+           &nbsp&nbsp str-index($string, $substring)
+           <br>
+           Number Functions
+           <br>
+           &nbsp&nbsp random([$limit])
+           <br>
+           &nbsp&nbsp min($numbers)
+           <br>
+           &nbsp&nbsp max($numbers)
          </div>
        </div>
      </div>
@@ -133,13 +156,60 @@
            <br>
            <br>
            if statements, for loops, while loops, etc.
+           <br>
+           <br>
+           <br>
+           For Loops
+           <br>
+           <br>
+           &nbsp&nbsp The format from &ltstart&gt through &ltend&gt specifies
+           <br>
+           &nbsp&nbsp that the for loop includes &ltend&gt
+           <br>
+           <br>
+           &nbsp&nbsp The format from &ltstart&gt to &ltend&gt goes up to but
+           <br>
+           &nbsp&nbsp not including &ltend&gt
+           <br>
+           <br>
+           &nbsp&nbsp If &ltstart&gt is greater than &ltend&gt the for loop
+           <br>
+           &nbsp&nbsp decrements instead of increments
          </div>
          <div class="col-lg-2">
            <a href="#two" class="page-scroll btn btn-default btn-circle"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a>
            <h1 class="title">Control Directives</h1>
            <a href="#four" class="page-scroll btn btn-default btn-circle"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
          </div>
-         <div class="col-lg-5">
+         <div class="col-lg-5 info">
+            $type: monster;
+            <br>
+            p {
+            <br>
+            &nbsp&nbsp @if $type == ocean {
+            <br>
+            &nbsp&nbsp&nbsp&nbsp  color: blue;
+            <br>
+            &nbsp&nbsp } @else if $type == monster {
+            <br>
+            &nbsp&nbsp&nbsp&nbsp  color: green;
+            <br>
+            &nbsp&nbsp } @else {
+            <br>
+            &nbsp&nbsp&nbsp&nbsp  color: black;
+            <br>
+            &nbsp&nbsp }
+            <br>
+            }
+            <br>
+            This is compiled to
+            <br>
+            p {
+            <br>
+            &nbsp&nbsp color: green;
+            <br>
+            }
+            <br>
          </div>
        </div>
      </div>
@@ -163,7 +233,39 @@
             <h1 class="title">Nesting</h1>
             <a href="#five" class="page-scroll btn btn-default btn-circle"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
           </div>
-          <div class="col-lg-5">
+          <div class="col-lg-5 info">
+            $border: 1px solid #EFC6F3;
+            <br>
+            .post {
+            <br>
+            &nbsp&nbsp border-radius: 3px;
+            <br>
+            &nbsp&nbsp background: #FFF8FF;
+            <br>
+            &nbsp&nbsp border: $border;
+            <br>
+            &nbsp&nbsp padding: 15px;
+            <br>
+            &nbsp&nbsp color: #333333;
+            <br>
+            &nbsp&nbsp .title {
+            <br>
+            &nbsp&nbsp&nbsp&nbsp color: #000000;
+            <br>
+            &nbsp&nbsp&nbsp&nbsp font-size: 20px;
+            <br>
+            &nbsp&nbsp }
+            <br>
+            &nbsp&nbsp .alt-title {
+            <br>
+            &nbsp&nbsp&nbsp&nbsp @extend .title;
+            <br>
+            &nbsp&nbsp&nbsp&nbsp border-bottom: $border;
+            <br>
+            &nbsp&nbsp }
+            <br>
+            }
+
           </div>
         </div>
       </div>
@@ -186,7 +288,46 @@
             <h1 class="title">@ Rules</h1>
             <a href="#six" class="page-scroll btn btn-default btn-circle"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
           </div>
-          <div class="col-lg-5">
+          <div class="col-lg-5 info">
+            Same functionality as regular verisons
+            <br>
+            Capability of nesting is a Sass feature
+            <br>
+            example.scss
+            <br>
+            .example {
+            <br>
+            &nbsp&nbsp color: red;
+            <br>
+            }
+            <br>
+            main.scss
+            <br>
+            #main {
+            <br>
+            &nbsp&nbsp @import “example”;
+            <br>
+            }
+            <br>
+            This compiles to
+            <br>
+            #main .example {
+            <br>
+            &nbsp&nbsp color: red;
+            <br>
+            }
+            <br>
+            .sidebar {
+            <br>
+            &nbsp&nbsp width 300px;
+            <br>
+            &nbsp&nbsp @media screen and (orientation:landscape) {
+            <br>
+            &nbsp&nbsp&nbsp&nbsp width: 500px;
+            <br>
+            &nbsp&nbsp }
+            <br>
+            }
           </div>
         </div>
       </div>
@@ -202,13 +343,41 @@
             <br>
             <br>
             Avoids repetitive code
+            <br>
+            <br>
+            Defined with the @mixin directive
+            <br>
+            <br>
+            Can take arguments, written in a paragraph and separated by a commarr
           </div>
           <div class="col-lg-2">
             <a href="#five" class="page-scroll btn btn-default btn-circle"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a>
             <h1 class="title">Mixins</h1>
             <a href="#seven" class="page-scroll btn btn-default btn-circle"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
           </div>
-          <div class="col-lg-5">
+          <div class="col-lg-5 info">
+            @mixin headline ($color, $size) {
+            <br>
+            &nbsp&nbsp color: $color;
+            <br>
+            &nbsp&nbsp font-size: $size;
+            <br>
+            }
+            <br>
+            h1 {
+            <br>
+            &nbsp&nbsp @include headline(green, 12px);
+            <br>
+            <br>
+            }
+            <br>
+            h1 {
+            <br>
+            &nbsp&nbsp color: green;
+            <br>
+            &nbsp&nbsp font-size: 12px;
+            <br>
+            }
           </div>
         </div>
       </div>
@@ -246,7 +415,8 @@
             <h1 class="title">Why Sass?</h1>
             <a href="#intro" class="page-scroll btn btn-default btn-circle">TOP</span></a>
           </div>
-          <div class="col-lg-5">
+          <div class="col-lg-5 info">
+            <img src="images/sass.svg" style="width: 100%; height: auto;"></img>
           </div>
         </div>
       </div>
